@@ -1,200 +1,267 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./assets/img/bap-icon.png" />
     <title>Company trip</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="style1.css">
-</head>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style-footer.css">
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Aug 13, 2022 08:00:00").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+          
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
 
-<body>
-    <div class="header">
+      var navbar = document.getElementById('navbar')
+        window.onscroll = function() {
+          console.log(window.pageYOffset);
+          if (window.pageYOffset > 50) {
+            var element = document.getElementById("navbar");
+            element.classList.add("scrolled");
+          } else {
+            var element = document.getElementById("navbar");
+            element.classList.remove("scrolled");
+          }
+        }
+      </script>
+  </head>
+  <body>
+    <div class="header-nav" id="navbar">
         <ul class="header-avatar">
-            <li class="header-avatar-icon"><img class="header-avatar-image" src="./assets/img/bap-icon.png" alt="avatar"></img>
-            </li>
+          <li class="header-avatar-icon"><img class="header-avatar-image" src="./assets/img/bap-icon.png" alt="avatar" ></img></li>
         </ul>
         <ul class="header-item">
-            <li class="header-item-select">Giới thiệu</li>
-            <li class="header-item-select">Câu chuyện</li>
-            <li class="header-item-select">Khoảnh khắc</li>
-            <li class="header-item-select">Sự kiện</li>
+          <li class="header-item-select"><a href="#">Giới thiệu</a></li>
+          <li class="header-item-select"><a href="#">Câu chuyện</a></li>
+          <li class="header-item-select"><a href="#">Khoảnh khắc</a></li>
+          <li class="header-item-select"><a href="#">Sự kiện</a></li>
         </ul>
     </div>
-    <div class="content">
+    <div class="content" id="startchange">
         <div class="content-home">
-            <img class="content-home-img" src="./assets/img/home.jpg" alt="home">
+            <img class="content-home-img" src="./assets/img/home.jpg" alt="home" style="width:100%;">
+            <div class="centered-home__top">
+              <h1 class="content-home__header">Company trip</h1>
+            </div>
+            <div class="centered-home">
+              <button class="content-home__btn">Let'go</button>
+            </div>
         </div>
+        <h1 class="content-idioms">"Ta chợt bắt gặp một góc nhìn mới"</h1>
+        <h1 class="content-idioms__author">Minh</h1>
         <div class="content-countdown">
-            <img class="content-countdown-img" src="./assets/img/countdown.png">
+            <img class="content-countdown-img" src="./assets/img/background-countdown.png">
+            <div class="centered-countdown__top">
+              <h1 class="content-countdown__header">Cùng đếm ngược</h1>
+              <h1 class="content-countdown__header"> đến chuyến đi sắp tới nào!!</h1>
+            </div>
+            <div class="centered-countdown__center">
+              <h1 class="content-countdown__date">13.08.2022</h1>
+              <p id="demo" class="content-countdown__date"></p>
+            </div>
         </div>
         <div class="content-card">
-            <h1 class="content-card__header">FLC Quy Nhơn</h1>
-            <div class="content-card__container">
-                <div class="content-card-item">
-                    <img class="content-card-item__img" src="./assets/img/card-1.jpg" alt="Avatar" style="width:100%">
-                    <div class="content-card__container-content">
-                        <p class="content-card__container-content_main">FLC Quy Nhơn</p>
-                        <img src="./assets/img/icon_tym.png" class="content-card-icon_img_tym" alt="">
-                        <img src="./assets/img/icon1.png" class="content-card-icon_img" alt="">
-                        <p class="content-card__container-content_change">Architect & Engineer</p>
-                    </div>
-                </div>
-                <div class="content-card-item">
-                    <img class="content-card-item__img" src="./assets/img/card-2.jpg" alt="Avatar" style="width:100%">
-                    <div class="content-card__container-content">
-                        <p class="content-card__container-content_main">Phòng nghỉ</p>
-                        <img src="./assets/img/icon_tym.png" class="content-card-icon_img_tym" alt="">
-                        <img src="./assets/img/icon1.png" class="content-card-icon_img" alt="">
-                        <p class="content-card__container-content_change">Architect & Engineer</p>
-                    </div>
-                </div>
-                <div class="content-card-item">
-                    <img class="content-card-item__img" src="./assets/img/card-3.jpg" alt="Avatar" style="width:100%">
-                    <div class="content-card__container-content">
-                        <p class="content-card__container-content_main">Khu vui chơi</p>
-                        <img src="./assets/img/icon_tym.png" class="content-card-icon_img_tym" alt="">
-                        <img src="./assets/img/icon1.png" class="content-card-icon_img" alt="">
-                        <p class="content-card__container-content_change">Architect & Engineer</p>
-                    </div>
-                </div>
-                <div class="content-card-item">
-                    <img class="content-card-item__img" src="./assets/img/card-3.jpg" alt="Avatar" style="width:100%">
-                    <div class="content-card__container-content">
-                        <p class="content-card__container-content_main">Khu vui chơi</p>
-                        <img src="./assets/img/icon_tym.png" class="content-card-icon_img_tym" alt="">
-                        <img src="./assets/img/icon1.png" class="content-card-icon_img" alt="">
-                        <p class="content-card__container-content_change">Architect & Engineer</p>
-                    </div>
-                </div>
+          <h1 class="content-card__header">FLC Quy Nhơn</h1>
+          <div class="content-card__container">
+            <div class="content-card-item">
+              <img class="content-card-item__img" src="./assets/img/card-1.jpg" alt="Avatar" style="width:100%">
+              <div class="content-card__container-content">
+                <h4>FLC Quy Nhơn</h4>
+                <p>Architect & Engineer</p>
+              </div>
             </div>
-
-            <div class="content-card__container">
-                <div class="content-card-item">
-                    <img class="content-card-item__img" src="./assets/img/card-1.jpg" alt="Avatar" style="width:100%">
-                    <div class="content-card__container-content">
-                        <p class="content-card__container-content_main">FLC Quy Nhơn</p>
-                        <img src="./assets/img/icon_tym.png" class="content-card-icon_img_tym" alt="">
-                        <img src="./assets/img/icon1.png" class="content-card-icon_img" alt="">
-                        <p class="content-card__container-content_change">Architect & Engineer</p>
-                    </div>
-                </div>
-                <div class="content-card-item">
-                    <img class="content-card-item__img" src="./assets/img/card-2.jpg" alt="Avatar" style="width:100%">
-                    <div class="content-card__container-content">
-                        <p class="content-card__container-content_main">Phòng nghỉ</p>
-                        <img src="./assets/img/icon_tym.png" class="content-card-icon_img_tym" alt="">
-                        <img src="./assets/img/icon1.png" class="content-card-icon_img" alt="">
-                        <p class="content-card__container-content_change">Architect & Engineer</p>
-                    </div>
-                </div>
-                <div class="content-card-item">
-                    <img class="content-card-item__img" src="./assets/img/card-3.jpg" alt="Avatar" style="width:100%">
-                    <div class="content-card__container-content">
-                        <p class="content-card__container-content_main">Khu vui chơi</p>
-                        <img src="./assets/img/icon_tym.png" class="content-card-icon_img_tym" alt="">
-                        <img src="./assets/img/icon1.png" class="content-card-icon_img" alt="">
-                        <p class="content-card__container-content_change">Architect & Engineer</p>
-                    </div>
-                </div>
-                <div class="content-card-item">
-                    <img class="content-card-item__img" src="./assets/img/card-3.jpg" alt="Avatar" style="width:100%">
-                    <div class="content-card__container-content">
-                        <p class="content-card__container-content_main">Khu vui chơi</p>
-                        <img src="./assets/img/icon_tym.png" class="content-card-icon_img_tym" alt="">
-                        <img src="./assets/img/icon1.png" class="content-card-icon_img" alt="">
-                        <p class="content-card__container-content_change">Architect & Engineer</p>
-                    </div>
-                </div>
+            <div class="content-card-item">
+              <img class="content-card-item__img" src="./assets/img/card-2.jpg" alt="Avatar" style="width:100%">
+              <div class="content-card__container-content">
+                <h4>FLC Quy Nhơn</h4>
+                <p>Architect & Engineer</p>
+              </div>
             </div>
+            <div class="content-card-item">
+              <img class="content-card-item__img" src="./assets/img/card-3.jpg" alt="Avatar" style="width:100%">
+              <div class="content-card__container-content">
+                <h4>FLC Quy Nhơn</h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="content-schedule">
-            <div class="content-schedule__container">
-                <div class="content-schedule-card">
-                    <div class="content-schedule__item">
-                        <div>
-                            <h1 class="content-schedule__header">Lịch trình</h1>
-                        </div>
-                        <div class="content-schedule__item-one">
-                            <img src="./assets/img/lich_trinh_1.png" class="content-schedule__icon" alt="">
-                            <p class="content-schedule__main-content">Bến xe Đàewrmkoweijfijowfn ịwifjiofnnkldfjhw Nẵng </p>
-                        </div>
-                        <div class="content-schedule__item-one">
-                            <img src="./assets/img/lich_trinh_1.png" class="content-schedule__icon" alt="">
-
-                            <p class="content-schedule__main-content">Bến xeạnduia hừhffjwiefkj fjnwhf Đà Nẵng</p>
-
-                        </div>
-                        <div class="content-schedule__item-one">
-                            <img src="./assets/img/lich_trinh_1.png" class="content-schedule__icon" alt="">
-
-                            <p class="content-schedule__main-content">Bến xe Đbfnuijwefhnwef iuwehfdwefij fdnoiuwefjh bừihf à Nẵng</p>
-                        </div>
-                        <div class="content-schedule__item-one">
-                            <img src="./assets/img/lich_trinh_1.png" class="content-schedule__icon" alt="">
-
-                            <p class="content-schedule__main-content">Bến xe Đà Nẵng</p>
-                        </div>
-                        <div class="content-schedule__item-one">
-                            <img src="./assets/img/lich_trinh_1.png" class="content-schedule__icon" alt="">
-
-                            <p class="content-schedule__main-content">Bến xe Đà Nẵng</p>
-                        </div>
-                        <div class="content-schedule__item-one">
-                            <img src="./assets/img/lich_trinh_1.png" class="content-schedule__icon" alt="">
-                            <p class="content-schedule__main-content">Bến xe Đà Nẵng</p>
-                        </div>
+          <h1 class="content-schedule__header">Schedule</h1>
+          <div class="content-schedule__container">
+            <div class="content-schedule-card">
+              <div class="content-schedule__item">
+                <ul>
+                  <li>Bến xe Đà Nẵng</li>
+                  <li>Bến xe Quảng Nam</li>
+                  <li>Bến xe Quy nhơn</li>
+                </ul>
+              </div>
+              <div class="content-schedule__card">
+                <div class="content-card__container">
+                  <div class="content-card-item">
+                    <img class="content-card-item__img" src="./assets/img/BAP-group.jpg" alt="Avatar" style="width:100%">
+                    <div class="content-card__container-content">
+                      <h4>Trip to Quy Nhơn</h4>
+                      <p>Architect & Engineer</p>
                     </div>
-                    <div class="content-schedule__card">
-                        <div class="content-card__container">
-                            <div class="content-card-item">
-                                <img class="content-card-item__img-schedule" src="./assets/img/BAP-group.jpg" alt="Avatar" style="width:100%">
-                                <div class="content-card__container-content">
-                                    <h4 class="trip_to">Trip to Quy Nhơn</h4>
-                                    <p class="time_trip">14-29 June | by BAP Da Nang</p>
-                                    <img src="./assets/img/icon_lichtrinh1.png" alt="" class="icon_trip">
-                                    <img src="./assets/img/icon_lichtrinh2.png" alt="" class="icon_trip">
-                                    <img src="./assets/img/icon_lichtrinh3.png" alt="" class="icon_trip">
-                                    <img src="./assets/img/icon_lichtrinh3.png" alt="" class="icon_trip">
-                                    <p class="people_join"> 300 people going</p>
-                                    <img src="./assets/img/icon_company.png" alt="" class="icon_company">
-                                    <img src="./assets/img/icon_tym.png" alt="" class="icon_tym">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+              </div>
             </div>
-            <div class="content-team">
-                <div class="content-team__header">Team work</div>
-                <div class="content-team__container">
-                    <div class="content-team-item">
-                        <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
-                        <div class="content-team__container-content">
-                            <h4>Team 1</h4>
-
-                        </div>
-                    </div>
-                    <div class="content-team-item">
-                        <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
-                        <div class="content-team__container-content">
-                            <h4>Team 2</h4>
-                        </div>
-                    </div>
-                    <div class="content-team-item">
-                        <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
-                        <div class="content-team__container-content">
-                            <h4>Team 3</h4>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="content-team">
+          <div class="content-team__header">Team work</div>
+          <div class="content-team__container">
+            <div class="content-team-item">
+              <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
+              <div class="content-team__container-content">
+                <h4>Team 1</h4>
+                
+              </div>
             </div>
-            <div class="footer">
-
+            <div class="content-team-item">
+              <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
+              <div class="content-team__container-content">
+                <h4>Team 2</h4>
+               </div>
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
+            <div class="content-team-item">
+              <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
+              <div class="content-team__container-content">
+                <h4>Team 3</h4>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 content-folk">
+            <p class="folk-content text-center">
+                Tuổi trẻ này thì ngắn, thế giới thì rộng lấn bao la. Nếu thay vì ngồi im và<br>
+                chờ đọi cơ hội, bạn cần phải chạy thật nhanh để ngắm nhìn mọi thứ.
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted footer ">
+      <!-- Section: Social media -->
+      
+      <section class="footer-text">
 
+        <div class="container text-center text-md-start mt-5">
+          
+          <div class="row mt-3">
+            
+            <div class="col-md-3">
+              
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>BAP Software
+              </h6>
+              <p>
+                Từ ngày 02-04/05/2021, toàn bộ hơn 300 CBCNV của BAP đã tham gia Chuyến du lịch công ty 2021 được diễn ra tại resort Hyatt Đà Nẵng. Năm nay đặc biệt hơn khi nó diễn ra vào đúng dịp kỷ niệm 5 năm ngày thành lập công ty. Mọi người đã có thời gian vui vẻ và thật sự đã toả sáng theo đúng chủ đề của năm nay "Shine" 
+
+                04.05.2021
+              </p>
+            </div>
+            
+            <div class="col-md-2 ">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold ">
+                Company
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            
+            <div class="col-md-2 ">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold ">
+                Contact 
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            
+            <div class="col-md-2 ">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                More
+              </h6>
+              <p><i class="fas fa-home "></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope "></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone "></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print "></i> + 01 234 567 89</p>
+            </div>
+
+
+            <div class="col-md-3">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">
+                  <img class="img-footer" src="./assets/img/image_fb.png" alt="">
+                  <img class="img-footer" src="./assets/img/image_it.png" alt="">
+                  <img class="img-footer" src="./assets/img/image_fb.png" alt="">
+                </h6>
+                <p><i class="fas fa-home me-3"></i> Discover our app</p>
+                <p>
+                    <img class="img-footer2" src="./assets/img/image_ggpl.png" alt="">
+                    <img class="img-footer2" src="./assets/img/image_ast.png" alt="">
+                </p>
+              </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
 </html>
