@@ -1,6 +1,6 @@
 
 .footer{
-    background-image: url('./assets/img/Quy-nhơn.jpg');
+    background-image: url('../img/Quy-nhơn.jpg');
     background-size: cover;
     padding-top: 10px;
     height: 350px;
@@ -28,11 +28,11 @@
     margin: 10px;
     margin-left: -10px;
     height: 700px;
-    background-image: url('./assets/img/folk.png');
+    background-image: url('../img/folk.png');
     background-size: cover;
 }
 @font-face{
-    src:url(./Indie_Flower/IndieFlower-Regular.ttf);
+    src:url(../font/IndieFlower-Regular.ttf);
     font-family: font-folk;
 }
 .folk-content{
