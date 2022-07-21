@@ -10,7 +10,7 @@ body {
     padding: 0 !important;
 }
 
-.header  {
+#navbar {
     display: flex;
     justify-content:space-around;
     background: rgba(0,0,0,0.1);
@@ -18,11 +18,31 @@ body {
     top: 0;
     width: 100%;
     box-sizing: border-box;
+    font-size: 20px;
+}
+
+#navbar.scrolled {
+    display: flex;
+    justify-content:space-around;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+
+.header-nav.scrolled {
+    background-color: rgba(0,0,0,0.5) !important;
+    transition: background-color 200ms linear;
 }
 
 .header-avatar {
     list-style: none;
 }
+
+
 
 .header-avatar-image {
     width: 60px;
@@ -37,18 +57,111 @@ body {
 }
 
 .header-item-select {
-    width: 6vw;
+    width: 7vw;
     display: inline-block;
     color: #fff;
     font-weight: 20px;
 }
+
+.header-item-select a{
+    color: #fff;
+    text-decoration: none;
+    -ms-transition:all .2s ease-in;
+    -webkit-transition:all .2s ease-in;
+    transition:all .1s ease-in;
+   
+}
+
+.header-item-select a:hover {
+    color:#0d3357; 
+    border-bottom: 1.2px solid #0d3357;
+}
+
 .header-item-right {
     display: flex;
+}
+
+.content-home {
+    text-align: center;
+    color: white;
+}
+
+.centered-home__top {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-home__header {
+    font-size: 100px;
+}
+
+.centered-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-home__btn {
+    border-radius: 50px;
+    width: 12vw;
+    height: 8vh;
+    font-size: larger;
+    background-color: #d7e9f5;
+    font-size: 36px;
+    border: none;
+}
+
+.content-home__btn:hover {
+    background-color:  #0d3357;
+    color: white;
 }
 
 .content-home-img {
     width: 100vw;
     height: 100vh;
+}
+
+.content-idioms {
+    margin-top: 6vh;
+    text-align: center;
+}
+.content-idioms__author {
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.content-countdown {
+    /* position: relative; */
+    text-align: center;
+    color: white;
+}
+
+.centered-countdown__top {
+    position: absolute;
+    top: 136%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-countdown__header {
+    font-size:8vh;
+    color: #0d3357;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+.centered-countdown__center {
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-countdown__date {
+    font-size: 10vh;
 }
 
 .content-countdown-img {
