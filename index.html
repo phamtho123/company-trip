@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./assets/img/bap-icon.png" />
     <title>Company trip</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/styleteam.css">
     <link rel="stylesheet" href="./assets/style/style-footer.css">
+  
     <script>
       // Set the date we're counting down to
       var countDownDate = new Date("Aug 13, 2022 08:00:00").getTime();
@@ -50,6 +54,11 @@
           }
         }
       </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
   </head>
   <body>
     <div class="header-nav" id="navbar">
@@ -67,14 +76,14 @@
         <div class="content-home">
             <img class="content-home-img" src="./assets/img/home.jpg" alt="home" style="width:100%;">
             <div class="centered-home__top">
-              <h1 class="content-home__header">Company trip</h1>
+              <h1 class="content-home__header">Company Trip</h1>
             </div>
             <div class="centered-home">
-              <button class="content-home__btn">Let'go</button>
+              <button class="content-home__btn">Let's go</button>
             </div>
         </div>
         <h1 class="content-idioms">"Ta chợt bắt gặp một góc nhìn mới"</h1>
-        <h1 class="content-idioms__author">Minh</h1>
+        <h1 class="content-idioms__author">- Minh -</h1>
         <div class="content-countdown">
             <img class="content-countdown-img" src="./assets/img/background-countdown.png">
             <div class="centered-countdown__top">
@@ -136,43 +145,118 @@
             </div>
           </div>
         </div>
-        <div class="content-team">
-          <div class="content-team__header">Team work</div>
-          <div class="content-team__container">
-            <div class="content-team-item">
-              <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
-              <div class="content-team__container-content">
-                <h4>Team 1</h4>
-                
+        <div class="content-team__header">Team work</div>
+        <div class="content-team__container">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <img src="./assets/img/flower.png" style="max-width:100%;" />
+            <div class="content-team__container">
+              <div class="content-team-column">
+                <img src="./assets/img/team-1.jpg" class="content_img"><br>
+                <h2 class="title">Team A</h2>
+                <p class="slogan"><i style="font-weight: bold;">Sức mạnh của tình bạn</i> <br>Nếu tất cả mọi người cùng nhau
+                  tiến về phía trước,<br> thì thành công sẽ tự nó đến </p>
               </div>
-            </div>
-            <div class="content-team-item">
-              <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
-              <div class="content-team__container-content">
-                <h4>Team 2</h4>
-               </div>
-            </div>
-            <div class="content-team-item">
-              <img class="content-team-item__img" src="./assets/img/team-1.jpg" alt="Avatar" style="width:100%">
-              <div class="content-team__container-content">
-                <h4>Team 3</h4>
-               </div>
+              <div class="content-team-column">
+                <img src="./assets/img/team-1.jpg" class="content_img"><br>
+                <h2 class="title">Team B</h2>
+                <p class="slogan"><i style="font-weight: bold;">Sức mạnh của tình bạn</i> <br>Nếu tất cả mọi người cùng nhau
+                  tiến về phía trước,<br> thì thành công sẽ tự nó đến </p>
+              </div>
+      
             </div>
           </div>
+          <div class="col-sm-1"></div>
         </div>
+
+        <div class="memory-container ">
+          <div class="memory-img">
+            <img src="./assets/img/memory.png" style="max-width: 95%;margin-top: 5%;">
+          </div>
+          <div class="memory-album ">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 ">
+              <div class="noidung zoomin"> 
+                <a data-fancybox="gallery" class="fancybox" href="./assets/img/memory2.png"
+                  data-caption="First image">
+                  <img src="./assets/img/memory2.png" />
+                </a>
+              </div>
+              <div class="noidung zoomin">
+                <a data-fancybox="gallery" href="./assets/img/memory1.png" data-caption="First image">
+                  <img src="./assets/img/memory1.png" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="noidung zoomin"> 
+                <a data-fancybox="gallery" class="fancybox" href="./assets/img/memory2.png"
+                  data-caption="First image">
+                  <img src="./assets/img/memory1.png" />
+                </a>
+              </div>
+              <div class="noidung zoomin">
+                <a data-fancybox="gallery" href="./assets/img/memory1.png" data-caption="First image">
+                  <img src="./assets/img/memory2.png" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="noidung zoomin"> 
+                <a data-fancybox="gallery" class="fancybox" href="./assets/img/memory2.png"
+                  data-caption="First image">
+                  <img src="./assets/img/memory2.png" />
+                </a>
+              </div>
+              <div class="noidung zoomin">
+                <a data-fancybox="gallery" href="./assets/img/memory1.png" data-caption="First image">
+                  <img src="./assets/img/memory1.png" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="noidung zoomin"> 
+                <a data-fancybox="gallery" class="fancybox" href="./assets/img/memory2.png"
+                  data-caption="First image">
+                  <img src="./assets/img/memory1.png" />
+                </a>
+              </div>
+              <div class="noidung zoomin">
+                <a data-fancybox="gallery" href="./assets/img/memory1.png" data-caption="First image">
+                  <img src="./assets/img/memory2.png" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="noidung zoomin"> 
+                <a data-fancybox="gallery" class="fancybox" href="./assets/img/memory2.png"
+                  data-caption="First image">
+                  <img src="./assets/img/memory2.png" />
+                </a>
+              </div>
+              <div class="noidung zoomin">
+                <a data-fancybox="gallery" href="./assets/img/memory1.png" data-caption="First image">
+                  <img src="./assets/img/memory1.png" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+        </div>
+      
+        <!-- <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 content-folk">
+              <p class="folk-content text-center">
+                  Tuổi trẻ này thì ngắn, thế giới thì rộng lấn bao la. Nếu thay vì ngồi im và<br>
+                  chờ đọi cơ hội, bạn cần phải chạy thật nhanh để ngắm nhìn mọi thứ.
+              </p>
+          </div>
+        </div> -->
       </div>
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8 content-folk">
-            <p class="folk-content text-center">
-                Tuổi trẻ này thì ngắn, thế giới thì rộng lấn bao la. Nếu thay vì ngồi im và<br>
-                chờ đọi cơ hội, bạn cần phải chạy thật nhanh để ngắm nhìn mọi thứ.
-            </p>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
-    <footer class="text-center text-lg-start bg-light text-muted footer ">
-      <!-- Section: Social media -->
+    
+    <!-- <footer class="text-center text-lg-start bg-light text-muted footer ">
+    
       
       <section class="footer-text">
 
@@ -193,7 +277,7 @@
             </div>
             
             <div class="col-md-2 ">
-              <!-- Links -->
+            
               <h6 class="text-uppercase fw-bold ">
                 Company
               </h6>
@@ -212,7 +296,7 @@
             </div>
             
             <div class="col-md-2 ">
-              <!-- Links -->
+             
               <h6 class="text-uppercase fw-bold ">
                 Contact 
               </h6>
@@ -231,7 +315,7 @@
             </div>
             
             <div class="col-md-2 ">
-              <!-- Links -->
+             
               <h6 class="text-uppercase fw-bold mb-4">
                 More
               </h6>
@@ -246,7 +330,7 @@
 
 
             <div class="col-md-3">
-                <!-- Links -->
+               
                 <h6 class="text-uppercase fw-bold">
                   <img class="img-footer" src="./assets/img/image_fb.png" alt="">
                   <img class="img-footer" src="./assets/img/image_it.png" alt="">
@@ -261,7 +345,7 @@
           </div>
         </div>
       </section>
-    </footer>
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,7 +1,11 @@
 .content-team__container {
   display: flex;
   text-align: center;
-  margin-bottom: 3%;
+  margin-top: 10vh;
+}
+
+.content-team__header {
+  text-align: center;
 }
 
 .content_img {
