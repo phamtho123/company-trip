@@ -112,6 +112,7 @@ body {
     background-color: #d7e9f5;
     font-size: 36px;
     border: none;
+    color: black;
 }
 
 .content-home__btn:hover {
@@ -240,10 +241,10 @@ body {
     margin-top: 2vh;
 }
 
-.content-team__container {
+/* .content-team__container {
     display: flex;
     justify-content: space-evenly;
-}
+} */
 
 .content-team-item__img {
     border-radius: 50%;
