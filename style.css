@@ -10,10 +10,10 @@ body {
     padding: 0 !important;
 }
 
-.header  {
+.header {
     display: flex;
-    justify-content:space-around;
-    background: rgba(0,0,0,0.1);
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,7 +30,7 @@ body {
     margin-top: 8px;
 }
 
-.header-item{
+.header-item {
     list-style: none;
     display: flex;
     align-items: center;
@@ -42,6 +42,7 @@ body {
     color: #fff;
     font-weight: 20px;
 }
+
 .header-item-right {
     display: flex;
 }
@@ -67,16 +68,16 @@ body {
     justify-content: space-evenly;
 }
 
-.content-card-item{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.content-card-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 20px;
     width: 20vw;
     height: 50vh;
 }
-  
+
 .content-card-item:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .content-card-item__img {
@@ -87,14 +88,15 @@ body {
 
 .content-card__container {
     padding: 2px 16px;
-  }
+}
 
 .content-schedule__header {
     text-align: center;
     font-size: 50px;
     margin-top: 2vh;
 }
-.content-schedule__container{
+
+.content-schedule__container {
     margin-top: 8vh;
     width: 100%;
     display: flex;
@@ -105,7 +107,7 @@ body {
     width: 60%;
     height: 80%;
     padding: 50px 0 50px 0;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     border-radius: 20px;
     display: flex;
@@ -115,6 +117,7 @@ body {
 .content-schedule__item {
     align-self: center;
 }
+
 .content-card-item__img {
     border-radius: 20px 20px 0 0;
     width: 20vw;
