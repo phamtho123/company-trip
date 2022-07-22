@@ -1,0 +1,122 @@
+/* contact */
+
+.heading {
+    font-size: 5em;
+    opacity: 0.8;
+    color: #006dd1;
+}
+
+.adress-w3pvt-info h6 {
+    font-size: 1.4em;
+    color: #3d3d3e;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 1em 0;
+    text-transform: capitalize;
+}
+
+.adress-w3pvt-info a {
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.adress-icon span.fa {
+    color: #006dd1;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.contact-forms input,
+.contact-forms textarea,
+.contact-forms select {
+    font-size: 15px;
+    color: #000;
+    padding: 1em 1em;
+    background: #f6f6f6;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 0px;
+    outline: none !important;
+}
+
+.contact-forms select {
+    padding: 0em 1em;
+    height: 52px !important;
+    color: #777;
+}
+
+button.sent-butnn {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 2px;
+    outline: none;
+    color: #fff;
+    background: #006dd1;
+    border-radius: 0px;
+    padding: 10px 20px;
+}
+
+.contact-left-form {
+    padding: 3em;
+    background: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+}
+
+.contact-right h4 {
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.contact-right h5 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+/* contact */
+
+.content-schedule__icon {
+    width: 5vh;
+    height: 5vh;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+}
+
+
+/* Huy */
+
+.content-card-item__img {
+    border-radius: 20px 20px 0 0;
+    width: 20vw;
+    height: 40vh;
+}
+
+.content-team__header {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 2vh;
+}
+
+.content-team__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-team-item__img {
+    border-radius: 50%;
+    width: 280px !important;
+    height: 280px;
+}
+
+.content-team__container-content {
+    display: flex;
+    justify-content: center;
+}
