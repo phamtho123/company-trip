@@ -1,0 +1,35 @@
+.content-home {
+    text-align: center;
+    color: white;
+}
+
+.centered-home__top {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-home__header-main {
+    font-size: 6.8vw;
+}
+
+.content-home__header-bap {
+    font-size: 2.4vw;
+}
+
+.content-home__header-date {
+    font-size: 2.6vw;
+}
+
+.centered-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-home-img {
+    width: 100vw;
+    height: 100vh;
+}
