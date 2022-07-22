@@ -1,0 +1,46 @@
+.content-schedule__border {
+    margin: 80px;
+}
+
+.content-schedule {
+    margin-top: 46vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #006dd1;
+}
+
+.content-schedule__header {
+    text-align: center;
+    color: red;
+    font-size: 4.4vw !important;
+}
+
+.content-schedule__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap !important;
+    margin: 10vh;
+}
+
+.content-schedule__item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-radius: 20px;
+    /* width: 20vw; */
+}
+
+.content-schedule__item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.content-schedule__item-img {
+    width: 400px;
+    height: 440px;
+}

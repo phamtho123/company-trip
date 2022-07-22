@@ -1,0 +1,90 @@
+.content-countdown {
+    text-align: center;
+    color: white;
+}
+
+.centered-countdown__top {
+    position: absolute;
+    top: 112%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-countdown__header {
+    font-size:6vh;
+    color: #0d3357;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    width: 100%;
+}
+
+.centered-countdown__center {
+    position: absolute;
+    top: 136%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-countdown__date {
+    font-size: 12vh;
+}
+
+#demo {
+    color: #0d3357;
+}
+
+.content-card {
+    margin-top: 500px;
+}
+
+@media (max-width: 1320px) {
+    .content-countdown__date {
+        font-size: 10vh;
+    }
+
+    .content-countdown__header {
+        font-size: 6vh;
+    }
+}
+
+@media (max-width: 1022px) {
+    .content-countdown__date {
+        font-size: 8vh;
+    }
+
+    .content-countdown__header {
+        font-size: 5vh;
+    }
+}
+
+@media (max-width: 820px) {
+    .content-countdown__date {
+        font-size: 4vh;
+    }
+
+    .content-countdown__header {
+        font-size: 4vh;
+    }
+}
+
+@media (max-width: 820px) {
+    .content-countdown__date {
+        font-size: 4vh;
+    }
+
+    .content-countdown__header {
+        font-size: 4vh;
+    }
+}
+
+@media (max-width: 440px){
+    .content-countdown__date {
+        font-size: 3vh;
+        margin-bottom: 160px;
+    }
+
+    .content-countdown__header {
+        font-size: 2vh;
+    }
+}
+
