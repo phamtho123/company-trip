@@ -1,0 +1,49 @@
+.title-memory-header {
+    font-size: 5vw;
+}
+
+.img-page-img{
+    width:150%;
+    height: 150%;
+    padding-top: 5%;
+    margin-left: 1px !important;
+  }
+
+.img-page-img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+  
+  .memory-album img {
+    padding: 1%;
+    max-width: 100%;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  
+  
+  
+  .zoomin img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  a[data-fancybox] img {
+    cursor: zoom-in;
+  }
+  
+  .fancybox-zoomIn {
+    animation: 0.25s ease both fancybox-zoomIn;
+  }
+  
+  .fancybox-zoomOut {
+    animation: 0.15s ease both fancybox-zoomOut;
+  }

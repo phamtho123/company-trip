@@ -1,13 +1,14 @@
 .nav {
     display: flex;
     justify-content:space-around;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.5);
     position: fixed;
     top: 0;
     width: 100%;
     box-sizing: border-box;
     font-size: 20px;
     justify-content: space-around;
+    z-index: 100;
 }
 
 #navbar.scrolled {
@@ -50,10 +51,12 @@
 
 .nav__link {
     text-decoration: none;
-    color: #fff;
     margin-right: 48px;
 }
 
+.nav__link a {
+    color: #fff;
+}
 /* Mobile nav  */
 
 .nav__bars-btn {

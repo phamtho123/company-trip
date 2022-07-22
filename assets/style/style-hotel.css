@@ -1,0 +1,44 @@
+
+@font-face{
+    src:url(../font/IndieFlower-Regular.ttf);
+    font-family: font-folk;
+}
+.hotel{
+    margin: 4%;
+    border: 2px solid #006dd1;
+    position: relative;
+}
+.font-folk{
+    font-family: font-folk;
+    color: rgb(8, 7, 6);
+}
+
+.name-hotel{
+    position: absolute;
+    border-left: 3px solid #006dd1;
+    margin-bottom: 3%;
+    
+}
+.name-hotel .text{
+    border-bottom: 2px solid #006dd1;
+    margin-left: 2%;
+    margin-top: 3%;
+    font-family: font-folk;
+}
+.name-hotel .text.h4{
+    margin-top: 20%;
+    font-size: 2vw;
+}
+.name-hotel .text{
+    font-size: 1.2vw;
+}
+.slide-hotel{
+    margin-bottom: 5%;
+}
+.d-block{
+    border: 1px solid #006dd1;
+}
+
+.hotel-header {
+    font-size: 4vw !important;
+}
