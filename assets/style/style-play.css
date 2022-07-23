@@ -1,0 +1,16 @@
+/* .content-play {
+    display: flex;
+    justify-content: center;
+} */
+
+.content-play__header {
+    text-align: center ;
+    font-size: 5em;
+    color: #006dd1;
+}
+
+.content-play__update {
+    text-align: center ;
+    font-size: 2em;
+    color: red;
+}

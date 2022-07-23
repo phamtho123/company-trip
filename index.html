@@ -2,72 +2,55 @@
 <html lang="en">
     <head>
     <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Client Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
-    <link rel="icon" href="./assets/img/bap-icon.png" />
-    <title>Company trip</title>
-    <!-- Required meta tags -->
-
     
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>Company trip</title>
+  
+    <link rel="icon" href="./assets/img/bap-icon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://raw.githubusercontent.com/JohnBlazek/codepen-resources/master/3d-carousel/css/stylesheet.css'>
+    
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="./assets/style/style-home.css">
+    <link rel="stylesheet" href="./assets/style/style-rotation.css">
     <link rel="stylesheet" href="./assets/style/style-nav.css">
     <link rel="stylesheet" href="./assets/style/style-countdown.css">
     <link rel="stylesheet" href="./assets/style/style-schedule.css"> 
+    <link rel="stylesheet" href="./assets/style/style-search.css"> 
     <link rel="stylesheet" href="./assets/style/style-hotel.css"> 
+    <link rel="stylesheet" href="./assets/style/style-play.css"> 
     <link rel="stylesheet" href="./assets/style/style-memory.css"> 
     <link rel="stylesheet" href="./assets/style/style-contact.css"> 
 
+
     <link rel="stylesheet" href="./assets/font/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
+   
     <script>
-        // Set the date we're counting down to
+    
         var countDownDate = new Date("Aug 13, 2022 08:00:00").getTime();
-        
-        // Update the count down every 1 second
         var x = setInterval(function() {
-        
-          // Get today's date and time
           var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
           var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-          // Output the result in an element with id="demo"
           document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-            
-          // If the count down is over, write some text 
+          + minutes + "m " + seconds + "s "
           if (distance < 0) {
             clearInterval(x);
             document.getElementById("demo").innerHTML = "EXPIRED";
@@ -85,10 +68,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               element.classList.remove("scrolled");
             }
           }
-        </script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   </head>
   <body>
@@ -98,10 +81,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <li class="header-avatar-icon"><img class="header-avatar-image" src="./assets/img/bap-icon.png" alt="avatar" ></img></li>
         </ul>
         <ul class="nav__list">
-          <li class="nav__link"><a href="#">Giới thiệu</a></li>
-          <li class="nav__link"><a href="#">Câu chuyện</a></li>
-          <li class="nav__link"><a href="#">Khoảnh khắc</a></li>
-          <li class="nav__link"><a href="#">Sự kiện</a></li>
+          <li class="nav__link"><a href="#home">Home</a></li>
+          <li class="nav__link"><a href="#countdown">Countdown</a></li>
+          <li class="nav__link"><a href="#schedule">Schedule</a></li>
+          <li class="nav__link"><a href="#search">Search Team</a></li>
+          <li class="nav__link"><a href="#hotel">Hotel</a></li>
+          <li class="nav__link"><a href="#famous">Famous place</a></li>
+          <li class="nav__link"><a href="#memory">Memory</a></li>
+          <li class="nav__link"><a href="#contact">Love mailbox</a></li>
         </ul>
       </div>
       <label for="nav-mobile-input" class="nav__bars-btn">
@@ -114,10 +101,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
         </label>
         <ul class="nav__mobile-list">
-          <li class="nav__link-mobile"><a href="#">Giới thiệu</a></li>
-          <li class="nav__link-mobile"><a href="#">Câu chuyện</a></li>
-          <li class="nav__link-mobile"><a href="#">Khoảnh khắc</a></li>
-          <li class="nav__link-mobile"><a href="#">Sự kiện</a></li>
+          <li class="nav__link-mobile"><a href="#home">Home</a></li>
+          <li class="nav__link-mobile"><a href="#countdown">Countdown</a></li>
+          <li class="nav__link-mobile"><a href="#schedule">Schedule</a></li>
+          <li class="nav__link-mobile"><a href="#search">Search Team</a></li>
+          <li class="nav__link-mobile"><a href="#hotel">Hotel</a></li>
+          <li class="nav__link-mobile"><a href="#famous">Famous place</a></li>
+          <li class="nav__link-mobile"><a href="#memory">Memory</a></li>
+          <li class="nav__link-mobile"><a href="#contact">Love mailbox</a></li>
         </ul>
         </ul>
       </div>
@@ -125,7 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <div class="content" id="startchange">
          <!-- Home  -->
-        <div class="content-home">
+        <div class="content-home" id="home">
             <!-- <img class="content-home-img" src="./assets/img/home.jpg" alt="home" style="width:100%;"> -->
             <div id="carouselExampleIndicators" class="carousel slide content-home" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -153,19 +144,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <span class="sr-only">Next</span>
                 </a>
             </div>
+
+            <div id="contentContainer" class="trans3d"> 
+              <section id="carouselContainer" class="trans3d">
+                <figure id="item1" class="carouselItem trans3d"><div class="carouselItemInner trans3d">C</div></figure>
+                <figure id="item2" class="carouselItem trans3d"><div class="carouselItemInner trans3d">O</div></figure>
+                <figure id="item3" class="carouselItem trans3d"><div class="carouselItemInner trans3d">M</div></figure>
+                <figure id="item4" class="carouselItem trans3d"><div class="carouselItemInner trans3d">P</div></figure>
+                <figure id="item5" class="carouselItem trans3d"><div class="carouselItemInner trans3d">A</div></figure>
+                <figure id="item6" class="carouselItem trans3d"><div class="carouselItemInner trans3d">N</div></figure>
+                <figure id="item7" class="carouselItem trans3d"><div class="carouselItemInner trans3d">Y</div></figure>
+                <figure id="item8" class="carouselItem trans3d"><div class="carouselItemInner trans3d">T</div></figure>
+                <figure id="item9" class="carouselItem trans3d"><div class="carouselItemInner trans3d">R</div></figure>
+                <figure id="item10" class="carouselItem trans3d"><div class="carouselItemInner trans3d">I</div></figure>
+                <figure id="item11" class="carouselItem trans3d"><div class="carouselItemInner trans3d">P</div></figure>
+                <figure id="item12" class="carouselItem trans3d"><div class="carouselItemInner trans3d">!!</div></figure>	
+              </section>
+              </div>
               
             <div class="centered-home__top">
               <div class="content-home__header-main">POWER UP</div>
-              <div class="content-home__header-bap">BAP COMPANY TRIP</div>
+              <!-- <div class="content-home__header-bap">BAP COMPANY TRIP</div> -->
               <div class="content-home__header-date">13/8 - 15/8</div>
             </div>
         </div>
 
         <!-- Countdown  -->
-        <div class="content-countdown">
+        <div class="content-countdown" id="countdown">
             <div class="centered-countdown__top">
               <h1 class="content-countdown__header">Cùng đếm ngược</h1>
-              <h1 class="content-countdown__header">Đến ngày nhỏ neo nào!!</h1>
+              <h1 class="content-countdown__header">Đến ngày nhổ neo nào!!</h1>
             </div>
             <div class="centered-countdown__center">
               <p id="demo" class="content-countdown__date"></p>
@@ -173,9 +181,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
 
          <!-- Schedule  -->
-        <div class="content-schedule__border">
+        <div class="content-schedule__border" id="schedule">
             <div class="content-schedule">
-                <div class="content-schedule__header">Thử thách 3 ngày 3 đếm Let's Go</div>
+                <div class="content-schedule__header">Thử thách 3 ngày 3 đêm Let's Go</div>
                 <div class="content-schedule__list">
                     <div class="content-schedule__item">
                         <img class="content-schedule__item-img" src="./assets/img/schedule.jpg">
@@ -190,9 +198,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
 
+        <!-- Search -->
+
+        <div class="content-search__team" id="search">
+          <div class="content-search__header">Mèm đét ơi!! Biết đồng đội mình chưa ?</div>
+          <div class="content-search__update">Update in the near future</div>
+        </div>
+
         <!-- Hotel -->
 
-        <div class="hotel">
+        <div class="hotel" id="hotel">
             <h2 class="text-center mt-5 font-folk hotel-header">Khách sạn 5* lận đó!</h2>
             <div class="row mt-5">
                 <div class="col-md-1"></div>
@@ -235,8 +250,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
 
+          <!-- Play Address -->
+
+          <div class="content-play" id="famous">
+            <div class="content-play__header">Ăn chơi gì ở Quy Nhơn ??</div>
+            <div class="content-play__update">Update in the near future</div>
+          </div>
+  
+
         <!-- Memory -->
-        <div class="page-img">
+        <div class="page-img" id="memory">
             <p class="text-center mt-5 font-folk title-memory-header">Khi "Memory" trở thành "Meme"!</p>
             <div class="row">
               <div class="col-sm-1"></div>
@@ -301,9 +324,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <div class="col-sm-1"></div>
             </div>
           </div>
+        
 
         <!-- contact -->
-            <section class="contact py-5" id="contact">
+          <section class="contact py-5" id="contact">
             <div class="container py-md-5">
                 <h3 class="heading text-center mb-3 mb-sm-5"> Contact with Bap Event Teams</h3>
                 <ul class="list-unstyled row text-center mt-lg-5 mt-4 px-lg-5">
@@ -365,6 +389,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='https://raw.githubusercontent.com/JohnBlazek/codepen-resources/master/3d-carousel/js/libs.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

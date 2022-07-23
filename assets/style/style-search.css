@@ -1,0 +1,16 @@
+/* .content-search__team {
+    display: flex;
+    justify-content: center;
+} */
+
+.content-search__header {
+    text-align: center ;
+    font-size: 5em;
+    color: #006dd1;
+}
+
+.content-search__update {
+    text-align: center ;
+    font-size: 2em;
+    color: red;
+}
